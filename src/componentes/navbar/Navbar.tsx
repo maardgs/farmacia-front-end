@@ -6,10 +6,9 @@ function Navbar() {
 
   let navigate = useNavigate()
 
-  let navbarComponent;
 
   return (
-    <div className="container flex justify-between text-lg">
+    
       <div className="w-full bg-teal-600 text-white flex justify-center py-4">
         <div className="container flex justify-between text-lg">
           <div className="text-2xl font-bold uppercase">
@@ -18,24 +17,19 @@ function Navbar() {
             </Link>
           </div>
           <div className="flex gap-4">
-            <div className="hover:underline">Produtos</div>
-            <div className="hover:underline">Cadastrar Produto</div>
             <Link to="/categoria" className="hover:underline">
-              
             Categoria
             </Link>
-            <Link to="/cadastrocategoria" className="hover:underline">
-              
+            <Link to="/cadastrarcategoria" className="hover:underline">
             Cadastrar Categoria
             </Link>
             <div className="flex justify-center "></div>
           </div>
         </div>
       </div>
-    </div>
-  );
+    );
 
-  return <>{navbarComponent}</>;
+ 
 }
 
 export default Navbar;
