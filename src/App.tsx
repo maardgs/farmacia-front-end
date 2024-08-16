@@ -6,6 +6,8 @@ import Navbar from './componentes/navbar/Navbar';
 import Footer from './componentes/footer/Footer';
 import Home from './pages/home/Home';
 import ListaCategorias from './componentes/categorias/listaCategoria/ListaCategoria';
+import FormularioCategoria from './componentes/categorias/formularioCategoria/FormularioCategoria';
+import DeletarCategoria from './componentes/categorias/deletarCategoria/DeletarCategoria';
 
 
 function App() {
@@ -18,6 +20,9 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/home" element={<Home />} />
               <Route path="/categoria" element={<ListaCategorias/>} />
+              <Route path="/cadastrarcategoria" element={<FormularioCategoria/>} />
+              <Route path="/editarcategoria" element={<FormularioCategoria/>} />
+              <Route path="/deletarcategoria" element={<DeletarCategoria/>} />
             </Routes>
           </div>
           <Footer />
@@ -26,3 +31,5 @@ function App() {
 );
 }
 export default App;
+
+

@@ -22,8 +22,8 @@ function FormularioCategoria() {
   function atualizarEstado(e: ChangeEvent<HTMLInputElement>) {
     setCategoria({
       ...categoria,
-      [e.target.name]: e.target.value,
-    });
+      [e.target.name]: e.target.value
+    })
 
     console.log(JSON.stringify(categoria));
   }
@@ -83,3 +83,4 @@ function FormularioCategoria() {
   );
 }
 
+export default FormularioCategoria;

@@ -9,7 +9,7 @@ function Footer() {
   return (
     <>
      <div className="flex justify-center bg-teal-600 text-white">
-        <div className="container flex flex-col items-center py-4">
+        <div className="container flex flex-col items-center py-100">
           <p className="text-xl font-bold">Farmácia Pistache | Copyright: MR </p>
           <p className="text-lg">Acesse nossas redes sociais</p>
           <div className="flex gap-2">
