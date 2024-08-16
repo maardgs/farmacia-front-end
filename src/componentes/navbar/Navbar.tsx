@@ -11,9 +11,11 @@ function Navbar() {
             <Link to="/home" className="text-1xl font-bold uppercase"><House size={32}/></Link></div>
           <div className="flex gap-4">
             <div className="hover:underline">Produtos</div>
-            <div className="hover:underline">Categoria</div>
-            <div className="hover:underline">Cadastrar Produto</div>
-            <div className="hover:underline">Cadastrar Categoria</div>
+              <div className="hover:underline">Cadastrar Produto</div>
+
+            <Link to='/categoria' className="hover:underline"> Categoria </Link>
+            <Link to='/categoria' className="hover:underline"> Cadastrar Categoria </Link>
+
             <div className="flex justify-center ">
             </div>
           </div>
