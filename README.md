@@ -1,50 +1,32 @@
-# React + TypeScript + Vite
+# Farmácia Front-end
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é o projeto de front-end de uma farmácia desenvolvido como parte da aprovação prática no Bootcamp da Generation Brasil. O objetivo deste projeto é criar uma interface interativa e funcional para um site de farmácia, utilizando tecnologias modernas como React e CSS.
 
-Currently, two official plugins are available:
+## 🚀 Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Catálogo de produtos**: Exibição de produtos organizados por categorias, com imagens e descrições.
+- **Links e navegação**: Página de categorias, produtos e sobre, com navegação intuitiva.
+- **Responsividade**: Layout ajustável para diferentes tamanhos de tela, proporcionando uma ótima experiência tanto em dispositivos móveis quanto em desktops.
+- **Página de gerenciamento**: Opção de cadastrar novas categorias, permitindo a expansão do catálogo de produtos.
 
-## Expanding the ESLint configuration
+## 🛠️ Tecnologias Utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **React.js**: Biblioteca JavaScript para construção da interface do usuário.
+- **CSS e TailwindCSS**: Estilização responsiva e customizada para garantir design moderno e usabilidade.
+- **React Router Dom**: Navegação entre as páginas da aplicação.
+- **Phosphor Icons**: Conjunto de ícones utilizados para melhorar a interface.
 
-- Configure the top-level `parserOptions` property like this:
+## 📸 Capturas de Tela
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Veja abaixo algumas imagens da interface:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+<div style="display: flex; justify-content: space-around; gap: 10px; align-items: center;">
+  <img src="./src/assets/mobile.png" alt="Visualização Mobile" width="30%" />
+  <img src="./src/assets/desktop.png" alt="Visualização Desktop" width="60%" />
+</div>
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## 💻 Como Executar
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/usuario/farmacia-front-end
